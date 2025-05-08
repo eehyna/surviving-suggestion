@@ -1,0 +1,238 @@
+		*{
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+/*  margin: 10px;*/
+/*  margin-bottom: 200px;*/
+  background: 
+  linear-gradient(to bottom, #E0EBFF, white);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.8;
+  letter-spacing: -0.7px;
+  overflow: hidden;
+ }
+
+ p.contents-text {
+  font-size: 11pt;
+  line-height: 1.8;
+  letter-spacing: -0.3px;
+ }
+
+table {
+	background-color: white;
+	width: 100%;
+  height: 600px;
+margin-top: 150px;
+  margin: auto;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+img{
+	height: 550px;
+  margin-left: 50px;
+  margin-right: 300px;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+  background-color: ##96C7ED;
+}
+
+table, tr, td {
+  border: 1px solid darkred;
+  border-collapse: collapse;
+}
+
+h1 {
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 40px;
+  letter-spacing: 1.2px;
+}
+
+h1, h3 {	
+	color: #FDF5E6;
+	 -webkit-text-stroke: 0.2px black;
+}
+
+h3, h4, h5 {
+	text-align: right;
+}
+
+h3 {
+  margin-right: 20px;
+	font-size: 20px;
+}
+
+h4, h5 {
+	color: #8CBDED ;
+	-webkit-text-stroke: 0.2px black;
+}
+
+
+td.index {
+  min-width: 300px;
+  max-width: 300px;
+  width: 300px;
+  white-space: nowrap;
+  padding: 20px;
+  height: 70px;
+
+}
+
+td.contents {
+  vertical-align: top;
+  overflow: auto;
+  height: 600px;
+  padding: 20px;
+}
+
+td.support {
+  background-color: #FFE4E1;
+  padding-right: 20px;
+}
+
+div.scroll-box {
+  box-sizing: border-box;
+  display: flex;
+  height: 550px;        /* ← 이 높이에서 넘치면 스크롤됨 */
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 900px;
+  margin-left: 20px;
+}
+
+details summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+body {
+	cursor: url('./goggwaengi.png'), auto; 
+}
+
+li {
+	border: 1px  black;
+}
+
+a, a:hover, a:visited, summary{
+  cursor: url('./cursor-2.png'), auto;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;         /* 부모 요소의 색상 따라가게 */
+  text-decoration: none;  /* 밑줄 없애기 */
+  font: inherit;          /* 글꼴, 크기 등 텍스트 스타일 상속 */
+}
+
+a:hover, summary:hover, .index1:hover {
+  text-decoration: underline;
+  color: #B9062F !important;
+}
+
+.index1 {
+  color: lightgray !important;
+  text-decoration: none;  
+  font: inherit;
+ }
+  
+
+.artistnote {
+  display: flex;
+  gap: 10px; 
+  padding: 0;
+  margin: 0; 
+
+}
+
+.artistnote li {
+	margin-top:15px;
+	margin-bottom: 5px;
+	padding: 5px 8px;
+  border: 1px outset pink; 
+  border-radius: 20px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.artistnote li:hover {
+  transform: translateY(-5px);
+  background-color: #FDF5E6;
+}
+
+.archiving li {
+	margin-top: 12px;
+	margin-left: 22px;
+}
+
+.archiving li:hover {
+	transform: translateY(-2px);
+}
+
+li {
+	list-style: none; /* 기본 점 없애기 */
+}
+.cloud-container-top{
+   overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  height: 50px;
+}
+
+.cloud-askii-top {
+  
+  display: inline-block;
+  will-change: transform;
+  animation: cloud-move-top 30s linear infinite;
+  color: white;
+  -webkit-text-stroke: 0.5px gray;
+  line-height: 1.2;
+}
+
+@keyframes cloud-move-top {
+  0% { transform: translateX(300%); }
+  100% { transform: translateX(-100%); }
+}
+
+.cloud-askii-top:hover { 
+  animation-play-state: paused; 
+}
+
+pre.askii-house {
+  font-size: 5pt;
+  line-height: 1;
+  color: gray;
+  margin-bottom: 10px;
+  position: absolute;
+  left: 20px;
+  top: 635px;
+}
+
+.askii-house:hover {
+  color: darkred ; 
+  text-decoration: none ;
+}
+
+td.index-last {
+  padding-left: 20px;
+  vertical-align: bottom;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+table {
+  display: none;
+}
+}
+
